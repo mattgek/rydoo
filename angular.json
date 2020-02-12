@@ -99,6 +99,10 @@
             "tsConfig": "apps/gyroscope/tsconfig.spec.json",
             "setupFile": "apps/gyroscope/src/test-setup.ts"
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     },
@@ -141,7 +145,8 @@
   "schematics": {
     "@nrwl/angular:application": {
       "unitTestRunner": "jest",
-      "e2eTestRunner": "cypress"
+      "e2eTestRunner": "cypress",
+      "style": "scss"
     },
     "@nrwl/angular:library": {
       "unitTestRunner": "jest",

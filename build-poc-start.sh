@@ -5,17 +5,31 @@ ng g @nrwl/angular:application identity --style=scss --routing
 ng g @nrwl/angular:application payment-methods --style=scss --routing
 ng g @nrwl/angular:application hotel --style=scss --routing
 
+# CREATING FEATURE GROUPING
+mkdir libs/features
+ng g @nrwl/angular:lib feature-shell --routing=false --parentModule=apps/gyroscope/src/app/app.module.ts
+ng g @nrwl/angular:lib feature-dashboard --routing --parentModule=apps/gyroscope/src/app/app.module.ts --lazy
+
 # CREATING UI LIBRARY
-ng g @nrwl/angular:lib --directory=libs ui-compass
-ng g @nrwl/angular:component --project=ui-compass --export
+mkdir libs/ui
+ng g @nrwl/angular:lib ui-compass
+ng g @nrwl/angular:component table --project=ui-compass --export
+ng g @nrwl/angular:component address-form --project=ui-compass --export
+
 
 # CREATING CORE LIBRARY
-mkdir libs/core
-ng g @nrwl/angular:lib --directory=core ui-core
-ng g @nrwl/angular:lib --directory=core app-core
-ng g @nrwl/angular:lib --project=app-core translations
-ng g @nrwl/angular:lib --project=app-core query-params
+mkdir libs/shared
+ng g @nrwl/angular:lib --directory=shared ui-core
+ng g @nrwl/angular:lib --directory=shared app-core
 
 # CREATING API LIBRARY
-ng g @nrwl/angular:lib --directory=api data-api
+mkdir libs/data-access
+ng g @nrwl/angular:lib --directory=data-access data-api
+
+# CREATING MATERIAL SCHEMATIC COMPONENTS
+ng generate @angular/material:navigation shell
+ng generate @angular/material:dashboard dasboard
+
+
+
 

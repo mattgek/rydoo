@@ -1,0 +1,31 @@
+{
+  "targets": {
+    "rydoo-demo-a10cd": {
+      "hosting": {
+        "gyroscope": [
+          "gyroscope",
+          "main-mf-gyroscope",
+          "rydoo-demo-a10cd"
+        ],
+        "expense": [
+          "mf-expense"
+        ],
+        "flight": [
+          "mf-flight"
+        ],
+        "identity": [
+          "mf-identity"
+        ],
+        "payment-methods": [
+          "mf-payment-methods"
+        ],
+        "hotel": [
+          "mf-hotel"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "rydoo-demo-a10cd"
+  }
+}
