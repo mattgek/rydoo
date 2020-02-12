@@ -8,7 +8,7 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'dashboard', loadChildren: () => import('@rydoo/feature/dashboard').then(m => m.FeaturesDashboardModule)
+    path: 'dashboard', loadChildren: () => import('@rydoo/features/dashboard').then(m => m.FeaturesDashboardModule)
   },
   {
     path: 'flights', loadChildren: () => import('../../../flight/src/app/flight-app.module').then(m => m.FlightAppModule)
@@ -17,10 +17,10 @@ const routes: Routes = [
     path: 'payment-methods', loadChildren: () => import('../../../payment-methods/src/app/payment-method-app.module').then(m => m.PaymentMethodAppModule)
   },
   {
-    path: 'flights-feature', loadChildren: () => import('@rydoo/feature/flights').then(m => m.FeaturesFlightsModule)
+    path: 'flights-feature', loadChildren: () => import('@rydoo/features/flights').then(m => m.FeaturesFlightsModule)
   },
   {
-    path: 'payment-methods-feature', loadChildren: () => import('@rydoo/feature/payment-methods').then(m => m.FeaturesPaymentMethodsModule)
+    path: 'payment-methods-feature', loadChildren: () => import('@rydoo/features/payment-methods').then(m => m.FeaturesPaymentMethodsModule)
   }
 
 ];
