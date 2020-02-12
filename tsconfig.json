@@ -21,7 +21,11 @@
       "@rydoo/ui/compass": ["libs/ui/compass/src/index.ts"],
       "@rydoo/shared/ui-core": ["libs/shared/ui-core/src/index.ts"],
       "@rydoo/shared/app-core": ["libs/shared/app-core/src/index.ts"],
-      "@rydoo/data-access/api": ["libs/data-access/api/src/index.ts"]
+      "@rydoo/data-access/api": ["libs/data-access/api/src/index.ts"],
+      "@rydoo/features/payment-methods": [
+        "libs/features/payment-methods/src/index.ts"
+      ],
+      "@rydoo/features/flights": ["libs/features/flights/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

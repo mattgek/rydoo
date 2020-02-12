@@ -919,6 +919,71 @@
           "styleext": "scss"
         }
       }
+    },
+    "features-payment-methods": {
+      "projectType": "library",
+      "root": "libs/features/payment-methods",
+      "sourceRoot": "libs/features/payment-methods/src",
+      "prefix": "rydoo",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/features/payment-methods/tsconfig.lib.json",
+              "libs/features/payment-methods/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/features/payment-methods/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/features/payment-methods/jest.config.js",
+            "tsConfig": "libs/features/payment-methods/tsconfig.spec.json",
+            "setupFile": "libs/features/payment-methods/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "features-flights": {
+      "projectType": "library",
+      "root": "libs/features/flights",
+      "sourceRoot": "libs/features/flights/src",
+      "prefix": "rydoo",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/features/flights/tsconfig.lib.json",
+              "libs/features/flights/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/features/flights/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/features/flights/jest.config.js",
+            "tsConfig": "libs/features/flights/tsconfig.spec.json",
+            "setupFile": "libs/features/flights/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
     }
   },
   "cli": {

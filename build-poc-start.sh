@@ -9,6 +9,8 @@ ng g @nrwl/angular:application hotel --style=scss --routing
 mkdir libs/features
 ng g @nrwl/angular:lib --directory=features shell --routing=false --parentModule=apps/gyroscope/src/app/app.module.ts
 ng g @nrwl/angular:lib --directory=features dashboard --routing --parentModule=apps/gyroscope/src/app/app.module.ts --lazy
+ng g @nrwl/angular:lib --directory=features flights --routing --parentModule=apps/gyroscope/src/app/app.module.ts --lazy
+ng g @nrwl/angular:lib --directory=features payment-methods --routing --parentModule=apps/gyroscope/src/app/app.module.ts --lazy
 
 # CREATING UI LIBRARY
 mkdir libs/ui

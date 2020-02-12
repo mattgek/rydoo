@@ -71,6 +71,11 @@
     "data-access-api": {
       "tags": []
     },
-
+    "features-payment-methods": {
+      "tags": []
+    },
+    "features-flights": {
+      "tags": []
+    }
   }
 }
