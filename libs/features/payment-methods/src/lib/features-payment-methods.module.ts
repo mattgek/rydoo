@@ -2,14 +2,16 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { PaymentMethodsComponent } from './payment-methods.component';
+import { UiCompassModule } from '@rydoo/ui/compass';
 
 @NgModule({
   imports: [
     CommonModule,
 
     RouterModule.forChild([
-       {path: '', pathMatch: 'full', component: PaymentMethodsComponent}
-    ])
+      { path: 'payment-methods-feature', pathMatch: 'full', component: PaymentMethodsComponent }
+    ]),
+    UiCompassModule
   ],
   declarations: [PaymentMethodsComponent],
   exports: [PaymentMethodsComponent]

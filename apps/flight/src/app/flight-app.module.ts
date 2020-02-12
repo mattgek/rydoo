@@ -2,6 +2,7 @@ import { NgModule, ModuleWithProviders } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
+import { UiCompassModule } from '@rydoo/ui/compass';
 
 
 @NgModule({
@@ -10,9 +11,10 @@ import { RouterModule } from '@angular/router';
     RouterModule.forChild([
       {
         path: 'flights',
-        component: AppComponent,
+        component: AppComponent
       }
-    ])
+    ]),
+    UiCompassModule
   ],
   providers: [],
   bootstrap: [AppComponent]
