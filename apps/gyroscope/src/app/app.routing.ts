@@ -15,6 +15,12 @@ const routes: Routes = [
   },
   {
     path: 'payment-methods', loadChildren: () => import('../../../payment-methods/src/app/payment-method-app.module').then(m => m.PaymentMethodAppModule)
+  },
+  {
+    path: 'flights-feature', loadChildren: () => import('@rydoo/features/flights').then(m => m.FeaturesFlightsModule)
+  },
+  {
+    path: 'payment-methods-feature', loadChildren: () => import('@rydoo/features/payment-methods').then(m => m.FeaturesPaymentMethodsModule)
   }
 
 ];

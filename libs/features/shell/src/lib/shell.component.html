@@ -6,8 +6,11 @@
       [opened]="false">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
+      <a mat-list-item [routerLink]="['/dashboard']" >Go to dashboard</a>
       <a mat-list-item [routerLink]="['/payment-methods']" >Go to Payment methods</a>
       <a mat-list-item [routerLink]="['/flights']">Go to flights</a>
+      <a mat-list-item [routerLink]="['/flights-feature']">Go to flights-feature</a>
+      <a mat-list-item [routerLink]="['/payment-methods-feature']">Go to Payment methods feature</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
