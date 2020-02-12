@@ -9,7 +9,7 @@ import { UiCompassModule } from '@rydoo/ui/compass';
     CommonModule,
 
     RouterModule.forChild([
-      { path: 'flight-feature', pathMatch: 'full', component: FlightsComponent }
+      { path: '', component: FlightsComponent }
     ]),
     UiCompassModule
   ],

@@ -9,7 +9,7 @@ import { UiCompassModule } from '@rydoo/ui/compass';
     CommonModule,
 
     RouterModule.forChild([
-      { path: 'payment-methods-feature', pathMatch: 'full', component: PaymentMethodsComponent }
+      { path: '', component: PaymentMethodsComponent }
     ]),
     UiCompassModule
   ],

@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { FeaturesShellModule } from '@rydoo/features/shell';
+import { FeaturesShellModule } from '@rydoo/feature/shell';
 import {FlightAppModule} from '../../../flight/src/app/flight-app.module';
 import { PaymentMethodAppModule } from '../../../payment-methods/src/app/payment-method-app.module';
-import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing';
 
 @NgModule({
