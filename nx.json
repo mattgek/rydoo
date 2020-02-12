@@ -1,0 +1,22 @@
+{
+  "npmScope": "rydoo",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "gyroscope": {
+      "tags": []
+    },
+    "gyroscope-e2e": {
+      "tags": [],
+      "implicitDependencies": ["gyroscope"]
+    }
+  }
+}

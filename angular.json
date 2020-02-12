@@ -1,0 +1,140 @@
+{
+  "version": 1,
+  "projects": {
+    "gyroscope": {
+      "projectType": "application",
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "apps/gyroscope",
+      "sourceRoot": "apps/gyroscope/src",
+      "prefix": "rydoo",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/apps/gyroscope",
+            "index": "apps/gyroscope/src/index.html",
+            "main": "apps/gyroscope/src/main.ts",
+            "polyfills": "apps/gyroscope/src/polyfills.ts",
+            "tsConfig": "apps/gyroscope/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "apps/gyroscope/src/favicon.ico",
+              "apps/gyroscope/src/assets"
+            ],
+            "styles": ["apps/gyroscope/src/styles.scss"],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/gyroscope/src/environments/environment.ts",
+                  "with": "apps/gyroscope/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "gyroscope:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "gyroscope:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "gyroscope:build"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "apps/gyroscope/tsconfig.app.json",
+              "apps/gyroscope/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!apps/gyroscope/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/gyroscope/jest.config.js",
+            "tsConfig": "apps/gyroscope/tsconfig.spec.json",
+            "setupFile": "apps/gyroscope/src/test-setup.ts"
+          }
+        }
+      }
+    },
+    "gyroscope-e2e": {
+      "root": "apps/gyroscope-e2e",
+      "sourceRoot": "apps/gyroscope-e2e/src",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/gyroscope-e2e/cypress.json",
+            "tsConfig": "apps/gyroscope-e2e/tsconfig.e2e.json",
+            "devServerTarget": "gyroscope:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "gyroscope:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["apps/gyroscope-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/gyroscope-e2e/**"]
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/angular"
+  },
+  "schematics": {
+    "@nrwl/angular:application": {
+      "unitTestRunner": "jest",
+      "e2eTestRunner": "cypress"
+    },
+    "@nrwl/angular:library": {
+      "unitTestRunner": "jest"
+    }
+  },
+  "defaultProject": "gyroscope"
+}
