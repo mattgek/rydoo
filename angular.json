@@ -25,7 +25,10 @@
               "apps/gyroscope/src/favicon.ico",
               "apps/gyroscope/src/assets"
             ],
-            "styles": ["apps/gyroscope/src/styles.scss"],
+            "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
+              "apps/gyroscope/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -83,7 +86,10 @@
               "apps/gyroscope/tsconfig.app.json",
               "apps/gyroscope/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/gyroscope/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/gyroscope/**"
+            ]
           }
         },
         "test": {
@@ -117,8 +123,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/gyroscope-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/gyroscope-e2e/**"]
+            "tsConfig": [
+              "apps/gyroscope-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/gyroscope-e2e/**"
+            ]
           }
         }
       }
