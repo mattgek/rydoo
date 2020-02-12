@@ -1,0 +1,2 @@
+# rydoo
+Rydoo Monorepo POC
