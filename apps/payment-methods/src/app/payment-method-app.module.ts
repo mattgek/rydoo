@@ -8,7 +8,7 @@ import { RouterModule } from '@angular/router';
   imports: [
     RouterModule.forChild([
       {
-        path: '',
+        path: 'payment-methods',
         component: AppComponent
       }
     ])

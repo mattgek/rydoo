@@ -9,7 +9,7 @@ import { RouterModule } from '@angular/router';
   imports: [
     RouterModule.forChild([
       {
-        path: '',
+        path: 'flights',
         component: AppComponent,
       }
     ])
