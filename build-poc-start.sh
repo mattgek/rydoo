@@ -7,12 +7,12 @@ ng g @nrwl/angular:application hotel --style=scss --routing
 
 # CREATING FEATURE GROUPING
 mkdir libs/features
-ng g @nrwl/angular:lib feature-shell --routing=false --parentModule=apps/gyroscope/src/app/app.module.ts
-ng g @nrwl/angular:lib feature-dashboard --routing --parentModule=apps/gyroscope/src/app/app.module.ts --lazy
+ng g @nrwl/angular:lib --directory=features shell --routing=false --parentModule=apps/gyroscope/src/app/app.module.ts
+ng g @nrwl/angular:lib --directory=features dashboard --routing --parentModule=apps/gyroscope/src/app/app.module.ts --lazy
 
 # CREATING UI LIBRARY
 mkdir libs/ui
-ng g @nrwl/angular:lib ui-compass
+ng g @nrwl/angular:lib --directory=ui compass
 ng g @nrwl/angular:component table --project=ui-compass --export
 ng g @nrwl/angular:component address-form --project=ui-compass --export
 
@@ -24,7 +24,7 @@ ng g @nrwl/angular:lib --directory=shared app-core
 
 # CREATING API LIBRARY
 mkdir libs/data-access
-ng g @nrwl/angular:lib --directory=data-access data-api
+ng g @nrwl/angular:lib --directory=data-access api
 
 # CREATING MATERIAL SCHEMATIC COMPONENTS
 ng generate @angular/material:navigation shell
