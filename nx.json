@@ -17,6 +17,53 @@
     "gyroscope-e2e": {
       "tags": [],
       "implicitDependencies": ["gyroscope"]
+    },
+    "expense": {
+      "tags": []
+    },
+    "expense-e2e": {
+      "tags": [],
+      "implicitDependencies": ["expense"]
+    },
+    "flight": {
+      "tags": []
+    },
+    "flight-e2e": {
+      "tags": [],
+      "implicitDependencies": ["flight"]
+    },
+    "identity": {
+      "tags": []
+    },
+    "identity-e2e": {
+      "tags": [],
+      "implicitDependencies": ["identity"]
+    },
+    "payment-methods": {
+      "tags": []
+    },
+    "payment-methods-e2e": {
+      "tags": [],
+      "implicitDependencies": ["payment-methods"]
+    },
+    "hotel": {
+      "tags": []
+    },
+    "hotel-e2e": {
+      "tags": [],
+      "implicitDependencies": ["hotel"]
+    },
+    "libs-ui-compass": {
+      "tags": []
+    },
+    "core-ui-core": {
+      "tags": []
+    },
+    "core-app-core": {
+      "tags": []
+    },
+    "api-data-api": {
+      "tags": []
     }
   }
 }

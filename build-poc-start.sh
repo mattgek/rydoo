@@ -1,9 +1,9 @@
 # CREATING SQUAD APPS
-ng g @nrwl/angular:application expense
-ng g @nrwl/angular:application flight
-ng g @nrwl/angular:application identity
-ng g @nrwl/angular:application payment-methods
-ng g @nrwl/angular:application hotel
+ng g @nrwl/angular:application expense --style=scss --routing
+ng g @nrwl/angular:application flight --style=scss --routing
+ng g @nrwl/angular:application identity --style=scss --routing
+ng g @nrwl/angular:application payment-methods --style=scss --routing
+ng g @nrwl/angular:application hotel --style=scss --routing
 
 # CREATING UI LIBRARY
 ng g @nrwl/angular:lib --directory=libs ui-compass
