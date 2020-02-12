@@ -8,7 +8,7 @@ import { FlightsComponent } from './flights.component';
     CommonModule,
 
     RouterModule.forChild([
-      {path: '', pathMatch: 'full', component: FlightsComponent}
+      {path: '', component: FlightsComponent}
     ])
   ],
   declarations: [FlightsComponent],

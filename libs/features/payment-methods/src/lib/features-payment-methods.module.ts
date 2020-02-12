@@ -8,7 +8,7 @@ import { PaymentMethodsComponent } from './payment-methods.component';
     CommonModule,
 
     RouterModule.forChild([
-       {path: '', pathMatch: 'full', component: PaymentMethodsComponent}
+       {path: '', component: PaymentMethodsComponent}
     ])
   ],
   declarations: [PaymentMethodsComponent],
