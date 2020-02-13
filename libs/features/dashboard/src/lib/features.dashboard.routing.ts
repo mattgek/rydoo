@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { DasboardComponent } from './dasboard.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', component: DasboardComponent },
+  { path: '', component: DasboardComponent },
 ];
 
 @NgModule({
