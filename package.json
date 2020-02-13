@@ -11,8 +11,6 @@
     "lint": "nx workspace-lint && ng lint",
     "e2e": "ng e2e",
     "deploy:gyroscope": "ng build gyroscope && npm run test --prod && firebase deploy --only hosting:gyroscope",
-    "deploy:flight": "ng build flight --prod && firebase deploy --only hosting:flight",
-    "deploy:payment-methods": "ng build flight --prod && firebase deploy --only hosting:payment-methods",
     "affected:apps": "nx affected:apps",
     "affected:libs": "nx affected:libs",
     "affected:build": "nx affected:build",
