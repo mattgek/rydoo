@@ -16,6 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@rydoo/app/flight": ["apps/flight/src/index.ts"],
+      "@rydoo/app/payment-methods": ["apps/payment-methods/src/index.ts"],
       "@rydoo/features/shell": ["libs/features/shell/src/index.ts"],
       "@rydoo/features/dashboard": ["libs/features/dashboard/src/index.ts"],
       "@rydoo/ui/compass": ["libs/ui/compass/src/index.ts"],

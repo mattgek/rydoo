@@ -2,10 +2,10 @@ import { ModuleWithProviders, NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
-import { environment } from '../../../flight/src/environments/environment';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UiCompassModule } from '@rydoo/ui/compass';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [AppComponent],

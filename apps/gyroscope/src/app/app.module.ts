@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { FeaturesShellModule } from '@rydoo/features/shell';
-import {FlightAppModule} from '../../../flight/src/app/flight-app.module';
-import { PaymentMethodAppModule } from '../../../payment-methods/src/app/payment-method-app.module';
+import { PaymentMethodAppModule } from '@rydoo/app/payment-methods';
 import { AppRoutingModule } from './app.routing';
+import { FlightAppModule } from '@rydoo/app/flight';
 
 @NgModule({
   declarations: [AppComponent],

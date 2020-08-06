@@ -57,12 +57,12 @@
         "depConstraints": [
           {
             "sourceTag": "scope:gyroscope",
-            "onlyDependOnLibsWithTags": ["scope:shared"]
+            "onlyDependOnLibsWithTags": ["scope:shared", "type:app", "type:feature"]
           },
 
           {
             "sourceTag": "type:app",
-            "onlyDependOnLibsWithTags": ["type:feature"]
+            "onlyDependOnLibsWithTags": ["type:feature", "type:ui"]
           },
           {
             "sourceTag": "type:feature",
@@ -78,7 +78,7 @@
           },
           {
             "sourceTag": "type:ui",
-            "onlyDependOnLibsWithTags": ["type:shared", "type:data-access"]
+            "onlyDependOnLibsWithTags": ["type:shared"]
           }
         ]
       }

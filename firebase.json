@@ -1,6 +1,6 @@
 {
   "hosting": [{
-    "target": "gryoscope",
+    "target": "gyroscope",
     "public": "dist/apps/gyroscope",
     "rewrites": [
       {
@@ -21,7 +21,7 @@
     },
     {
       "target": "payment-methods",
-      "public": "dist/apps/flight",
+      "public": "dist/apps/payment-methods",
       "rewrites": [
         {
           "source": "**",

@@ -11,8 +11,7 @@
         "hotel": [
           "mf-hotel"
         ],
-        "gryoscope": [
-          "gyroscope",
+        "gyroscope": [
           "rydoo-demo-a10cd"
         ],
         "payment-methods": [
