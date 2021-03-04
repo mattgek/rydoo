@@ -13,6 +13,8 @@
     "deploy:gyroscope": "ng build --prod gyroscope && firebase deploy --only hosting:gyroscope",
     "deploy:flight": "ng build --prod flight && firebase deploy --only hosting:flight",
     "deploy:paymentmethod": "ng build --prod payment-methods && firebase deploy --only hosting:payment-methods",
+    "deploy:dashboard": "ng build --prod dashboard && firebase deploy --only hosting:dashboard",
+    "deploy:all": "npm run deploy:dashboard && npm run deploy:paymentmethod && npm run deploy:flight && npm run deploy:gyroscope",
     "affected:apps": "nx affected:apps",
     "affected:libs": "nx affected:libs",
     "affected:build": "nx affected:build",

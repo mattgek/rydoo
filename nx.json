@@ -12,18 +12,11 @@
   },
   "projects": {
     "gyroscope": {
-      "tags": ["type:main-app","scope:gyroscope"]
+      "tags": ["type:main-app", "scope:gyroscope"]
     },
     "gyroscope-e2e": {
       "tags": [],
       "implicitDependencies": ["gyroscope"]
-    },
-    "expense": {
-      "tags": ["type:app", "scope:expense"]
-    },
-    "expense-e2e": {
-      "tags": [],
-      "implicitDependencies": ["expense"]
     },
     "flight": {
       "tags": ["type:app", "scope:flight"]
@@ -32,13 +25,6 @@
       "tags": [],
       "implicitDependencies": ["flight"]
     },
-    "identity": {
-      "tags": ["type:app", "scope:identity"]
-    },
-    "identity-e2e": {
-      "tags": [],
-      "implicitDependencies": ["identity"]
-    },
     "payment-methods": {
       "tags": ["type:app", "scope:payment-methods"]
     },
@@ -46,18 +32,11 @@
       "tags": [],
       "implicitDependencies": ["payment-methods"]
     },
-    "hotel": {
-      "tags": ["type:app", "scope:hotel"]
-    },
-    "hotel-e2e": {
-      "tags": [],
-      "implicitDependencies": ["hotel"]
-    },
     "features-shell": {
       "tags": ["type:feature", "scope:feature-shell"]
     },
     "features-dashboard": {
-      "tags": ["type:feature","scope:feature-dashboard"]
+      "tags": ["type:feature", "scope:feature-dashboard"]
     },
     "ui-compass": {
       "tags": ["type:ui", "scope:ui-compass"]
@@ -76,6 +55,13 @@
     },
     "features-flights": {
       "tags": ["type:feature", "scope:feature-flights"]
+    },
+    "dashboard": {
+      "tags": []
+    },
+    "dashboard-e2e": {
+      "tags": [],
+      "implicitDependencies": ["dashboard"]
     }
   }
 }

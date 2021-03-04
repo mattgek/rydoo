@@ -20,6 +20,16 @@
       ]
     },
     {
+      "target": "dashboard",
+      "public": "dist/apps/dashboard",
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    {
       "target": "payment-methods",
       "public": "dist/apps/payment-methods",
       "rewrites": [

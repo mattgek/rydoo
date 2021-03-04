@@ -19,6 +19,9 @@
         ],
         "flight": [
           "rydoo-flight"
+        ],
+        "dashboard": [
+          "rydoo-dashboard"
         ]
       }
     }
