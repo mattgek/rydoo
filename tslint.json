@@ -51,37 +51,7 @@
     "unified-signatures": true,
     "variable-name": false,
     "nx-enforce-module-boundaries": [
-      true,
-      {
-        "allow": [],
-        "depConstraints": [
-          {
-            "sourceTag": "scope:gyroscope",
-            "onlyDependOnLibsWithTags": ["scope:shared", "type:app", "type:feature"]
-          },
-
-          {
-            "sourceTag": "type:app",
-            "onlyDependOnLibsWithTags": ["type:feature", "type:ui"]
-          },
-          {
-            "sourceTag": "type:feature",
-            "onlyDependOnLibsWithTags": ["type:shared"]
-          },
-          {
-            "sourceTag": "type:data-access",
-            "onlyDependOnLibsWithTags": ["type:data-access"]
-          },
-          {
-            "sourceTag": "type:shared",
-            "onlyDependOnLibsWithTags": ["type:shared", "type:data-access"]
-          },
-          {
-            "sourceTag": "type:ui",
-            "onlyDependOnLibsWithTags": ["type:shared"]
-          }
-        ]
-      }
+      true
     ],
     "directive-selector": [true, "attribute", "app", "camelCase"],
     "component-selector": [true, "element", "app", "kebab-case"],
